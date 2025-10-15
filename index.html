@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Famzy's Downfall</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(135deg, #007bff, #6610f2);
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 1.8rem;
+      padding: 2rem;
+      animation: floatUp 1.2s ease-in-out;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: rgba(255, 255, 255, 0.1);
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+      color: #eee;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes floatUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Optional glow hover effect for text */
+    main p:hover {
+      text-shadow: 0 0 20px #fff;
+      transition: 0.3s ease;
+      cursor: pointer;
+    }
+
+    h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+}
+
+/* Smooth glowing motion */
+@keyframes shine {
+  0% { text-shadow: 0 0 10px rgba(0, 255, 255, 0.5); }
+  50% { text-shadow: 0 0 25px rgba(0, 255, 255, 0.9); }
+  100% { text-shadow: 0 0 10px rgba(0, 255, 255, 0.5); }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Your Website</h1>
+  </header>
+  
+  <main>
+    <h1>Famzy is dumb 😎</h1>
+    <p>I thought i couldn't host a website nau!</p>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 Agent Blade Inc. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
